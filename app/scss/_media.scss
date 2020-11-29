@@ -1,0 +1,294 @@
+@media(max-width: 1300px) {
+    .header__menu-btn {
+        display: block;
+        margin-right: auto;
+        cursor: pointer;
+    }
+    .header__menu-list {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        right: 0;
+        top: 90px;
+        background-color: $red;
+        width: 300px;
+        border-bottom: 2px solid #fff;
+        li {
+            text-align: center;
+            border-bottom: 2px solid #fff;
+            display: block;
+            &:last-child {
+                border-bottom: none;
+            }
+        }
+        a {
+            margin-top: 5px;
+            margin-bottom: 10px;
+        }
+
+    }
+    .header__logo {
+        margin-right: 30px;
+    }
+}
+@media(max-width: 1200px) {
+    .concert__wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .concert__slider {
+      margin-bottom: 30px;
+    }
+    .concert__video {
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+    }
+    .concert__video iframe {
+        width: 65%;
+        height: 340px;
+    }
+    .concer-next::before {
+        top: -45px;
+        right: 0;
+    }
+    .concer-prev::before {
+        top: -45px;
+        right: 45px;
+    }
+}
+
+@media(max-width: 1170px)  {
+    .slick-list.draggable {
+        text-align: center;
+    }
+    .concert__slider-content {
+        text-align: start;
+    }
+    .popular__wrapper {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .popular__insta {
+        max-width: 100%;
+    }
+    .popular__insta-box {
+        justify-content: space-around;
+        img {
+            margin-right: 5px;
+            margin-left: 5px;
+        }
+    }
+    .popular__songs {
+        margin-right: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width: 1100px) {
+    .header__top {
+        flex-wrap: wrap;
+    }
+    .header__social {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        margin-right: 0;
+    }
+    .header__btn {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .header__menu-btn {
+       margin-right: 0;
+    }
+    .header__logo {
+        margin-right: auto;
+        order: -1;
+        margin-left: 0;
+        padding-top: 20px;
+    }
+    .header__menu-list {
+        top: 200px;
+    }
+    .header__slider .header__slider-wrapper .header__slider-content {
+        left: 55%;
+    }
+    .header__slider .header__slider-wrapper .header__slider-content .header__slider-title {
+        font-size: 75px;
+    }
+    .header__slider .header__slider-wrapper .header__slider-content .header__slider-subtitle {
+        font-size: 50px;
+    }
+}
+@media(max-width: 750px) {
+    .concert__slider-item {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .concert__slider-content {
+        text-align: start;
+        width: 270px;
+    }
+    .info__text {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+    }
+    .info__title {
+        font-size: 25px;
+    }
+    .info__text p {
+        font-size: 18px;
+    }
+    .info__text p span {
+        font-size: 30px;
+    }
+    .info__text a {
+        width: 130px;
+        height: 40px;
+        font-size: 16px;
+    }
+    .app__title {
+        padding-top: 50px;
+    }
+}
+@media (max-width: 650px) {
+    .popular__songs-list {
+        display: flex;
+        flex-direction: column;
+    }
+    .popular__songs-list li {
+        width: 100%;
+    }
+}
+@media(max-width: 600px) {
+    .header__slider .header__slider-wrapper .header__slider-content {
+        left: 50%;
+    }
+    .header__slider .header__slider-wrapper .header__slider-content .header__slider-title {
+        font-size: 50px;
+    }
+    .header__slider .header__slider-wrapper .header__slider-content .header__slider-subtitle {
+        font-size: 35px;
+    }
+    .header__slider-inner .header__slider-item img {
+        height: 100%;
+    }
+    .concert__slider-content {
+        margin-left: 5px;
+        margin-right: 10px;
+    }
+    .concert__video iframe {
+        width: 100%;
+    }
+    .footer__menu ul {
+        display: block;
+    }
+    .footer__menu li {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .footer__menu li+li {
+        margin-left: 0px;
+    }
+    .app {
+         margin-bottom: 50px; 
+    }
+        
+    
+}
+
+@media(max-width: 500px) {
+    .header__menu-list {
+        top: 155px;
+        width: 100%;
+    }
+    .header__logo {
+      margin-bottom: 20px;
+    }
+    .members {
+        padding-top: 50px;
+    }
+    .members__wrapper {
+        padding-bottom: 50px;
+    }
+    .concert {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+    .info {
+        margin-bottom: 50px;
+    }
+    .popular__insta-box img {
+        width: 270px;
+        height: 270px;
+    }
+    .app__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 10px;
+    }
+    .app__subtitle {
+        font-size: 19px;
+        line-height: 26px;
+    }
+    .app__box {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        a {
+            margin-bottom: 10px;
+        }
+    }
+    .app__inner {
+        height: 425px;
+    }
+    .app {
+        margin-bottom: 50px;
+    }
+}
+@media(max-width: 360px) {
+    .members .member__item-desc {
+        bottom: 50px;
+    }
+    .members .members__item {
+        max-width: 370px;
+        width: 100%;
+        height: 470px;
+        position: relative;
+        margin-left: 5px;
+        margin-right: 5px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    .header__social li+li {
+        margin-left: 20px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1300px) {
+    .header__menu-list {
+        display: block !important;
+    }
+}

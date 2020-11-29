@@ -1,0 +1,564 @@
+@import 'global';
+@import 'vars';
+
+
+
+.header {
+    &__top {
+        background-color: $red;
+        color: #fff;
+        display: flex;
+        // justify-content: space-between;
+        align-items: center;
+        padding: 10px 45px;
+    }
+    &__menu-list {
+        a {
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        a:hover {
+            position: relative;
+            padding-left: 10px;
+            padding-right: 10px;
+            &::before {
+                content: '';
+                border-top: 2px solid #fff;
+                width: 100%;
+                left: 0;
+                right: 0;
+                position: absolute;
+                top: 50%;
+            }
+        }
+    }
+    &__menu-btn {
+        width: 40px;
+        display: none;
+    }
+    &__menu-row {
+        height: 5px;
+        background-color: #FFF;
+        margin-bottom: 5px;
+    }
+    &__logo {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &__social {
+        margin-right: 55px;
+        .social {
+            position: relative;
+            padding-left: 25px;
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+        } 
+        .social-facebook::before {
+            content: "\f09a";
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            left: 0;
+            font-size: 24px;
+        }
+        .social-twitter::before {
+            content: "\f099";
+            font-family: 'icomoon';
+            color: #fff;
+            position: absolute;
+            left: 0;
+            font-size: 24px;
+        }
+        .social-google-plus {
+            padding-left: 35px;
+        }
+        .social-google-plus::before {
+            content: "\f0d5";
+            font-family: 'icomoon'  ;
+            color: #fff;
+            position: absolute; 
+            left: 0;  
+            font-size: 24px;      
+        }
+        li + li {
+            margin-left: 40px;
+        }
+    }
+    &__btn {
+        // margin-left: auto;
+        a {
+            font-size: 18px;
+           width: 200px;
+           height: 50px; 
+           background-color: #fff;
+           color: $red;
+           border-radius: 30px;
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           &:hover {
+               box-shadow: 0px 0px 5px 5px #fff;
+               background-color: $red;
+               color: #fff;
+           }
+        }
+    }
+}
+
+.header__slider {
+    .header__slider-wrapper {
+        height: 100vh;
+        overflow: hidden;
+          height: calc(100vh - 100px);
+        position: relative;
+        .header__slider-content {
+            position: absolute;
+            z-index: 1;
+            top: 40%;
+            left: 70%;
+            margin-right: -50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+            .header__slider-title {
+                color: $red;
+                font-size: 90px;
+            }
+            .header__slider-subtitle {
+                font-size: 60px;
+                color: #333;
+                margin-bottom: 20px;
+                font-family: 'Marck Script', cursive;
+            }
+            .header__slider-btn {
+                font-size: 18px;
+                color: #ffF;
+                background-color: $red;
+                width: 200px;
+                height: 50px;
+                border-radius: 30px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+.header__slider-inner {
+
+    .header__slider-item {
+        height: 100%;
+        // height: calc(100vh - 100px);
+        img {
+            height: 100%;
+            // width: 100%;
+        }
+    }
+}
+
+
+// end header
+// start members
+
+.members {
+    padding-top: 100px;
+    &__wrapper {
+        border-bottom: 3px solid #dfdfdf;
+        padding-bottom: 100px;
+    }
+    &__inner {
+        padding-top: 50px;
+    }
+    .members__item:hover .member__item-social {
+        display: block;
+    }
+    .members__item {
+        max-width: 370px;
+        width: 100%;
+        height: 470px;
+        position: relative;
+        margin-left: 5px;
+        margin-right: 5px;
+        img {
+            width: 100%;
+        }
+    }
+    .member__item-desc {
+        color: #fff;
+        background-color: $red;
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+    }
+    .member__item-name {
+        height: 80px;
+        padding: 20px 25px;
+        h5 {
+            font-size: 22px;
+        }
+        h6 {
+            font-family: 'Marck Script', cursive;
+            font-size: 15px;
+        }
+    }
+    .member__item-social {
+        display: none;
+        height: 50px;
+        padding: 15px 25px;
+        
+        .memb {
+            font-size: 14px;
+            position: relative;
+            padding-left: 25px;
+            display: flex;
+            align-items: center;
+        }
+        .memb-fb::before {
+            content: "\f09a";
+            font-family: 'icomoon';
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+        }
+        .memb-twit::before {
+            content: "\f099";
+            font-family: 'icomoon';
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+        }
+        .memb-gp {
+            padding-left: 30px;
+        }
+        .memb-gp::before {
+            content: "\f0d5";
+            font-family: 'icomoon';
+            font-size: 18px;
+            position: absolute;
+            left: 0;
+        }
+        li + li {
+            margin-left: 25px;
+        }
+    }
+}
+.slick-prev::before {
+    content: "\f104";
+    font-family: 'icomoon';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: $red;
+    z-index: 3;
+    color: #fff;
+    font-size: 30px;
+    top: 0;
+    right: 60px;
+    cursor: pointer;
+    padding-left: 10px;
+}
+.slick-next::before {
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: $red;
+    font-size: 30px;
+    color: #fff;
+    top: 0;
+    right: 15px;
+    cursor: pointer;
+    padding-left: 12px;
+}
+
+
+// end members
+// start concert
+
+.concert {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.concert__wrapper {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+}
+.concert__slider {
+    max-width: 775px;
+    width: 100%;
+}
+.concert__slider-item {
+    display: flex !important;
+}
+.concert__slider-img {
+    width: 270px;
+    height: 290px;
+    position: relative;
+    // margin-right: 80px;
+    img {
+        width: 100%;
+    }
+}
+.concert__slider-data {
+    position: absolute;
+    text-align: center;
+    display: flex;
+    width: 30px;
+    top: 50%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 24px;
+}
+.concert__slider-content {
+    margin-left: 40px;
+    margin-right: 20px;
+    padding-top: 10px;
+    color: #333;
+    h6 {
+        font-size: 22px;
+        margin-bottom: 15px;
+    }
+    li {
+        font-size: 16px;
+        line-height: 30px;
+        span {
+            font-weight: 600;
+            margin-right: 5px;
+        }
+    }
+    ul {
+        margin-bottom: 25px;
+        display: flex;
+        flex-direction: column;
+    }
+    a {
+        width: 190px;
+        height: 50px;
+        font-size: 18px;
+        color: #fff;
+        background-color: $red;
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+  
+}
+.concert__video {
+    max-width: 375px;
+    width: 100%;
+    iframe {
+        width: 370px;
+        height: 290px;
+    }
+}
+
+.concert__video-title {
+    font-weight: 300;
+}
+.concert__slider-title {
+    font-weight: 300;
+}
+.concert__slider-subtitle {
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.concert__video-subtitle {
+    margin-bottom: 40px;
+    font-weight: 300;
+}
+.concer-prev::before {
+    content: "\f104";
+    font-family: 'icomoon';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: $red;
+    z-index: 3;
+    color: #fff;
+    font-size: 30px;
+    top: -50px;
+    right: -345px;
+    cursor: pointer;
+    padding-left: 10px;  
+}
+.concer-next::before {
+    content: "\f105";
+    font-family: 'icomoon';
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    background-color: $red;
+    font-size: 30px;
+    color: #fff;
+    top: -50px;
+    right: -390px;
+    cursor: pointer;
+    padding-left: 12px;
+}
+
+// end 
+// start info
+
+.info {
+    margin-bottom: 100px;
+}
+.info__content {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.info__text {
+    padding-top: 83px;
+    padding-bottom: 83px;
+    padding-left: 100px;
+    color: #fff;
+    max-width: 650px;
+    width: 100%;
+    p {
+        font-size: 22px;
+        font-size: 30px;
+        margin-bottom: 20px;
+        span {
+            font-family: 'Marck Script', cursive;
+            font-size: 65px;
+        }
+    }
+    a {
+        width: 160px;
+        height: 50px;
+        background-color: #fff;
+        color: $red;
+        border-radius: 30px;
+        font-size: 20px;
+        font-weight: 600;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+.info__title {
+    font-size: 32px;
+    // margin-bottom: 0px;
+}
+
+// end info
+// start popular
+
+.pupular {
+    margin-bottom: 50px;
+}
+.popular__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.popular__songs {
+    margin-right: 20px;
+    iframe {
+        margin-bottom: 30px;
+    }
+}
+
+.popular__songs-subtitle {
+    margin-bottom: 30px;
+} 
+.popular__songs-list {
+    display: flex;
+    li {
+        width: 200px;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #ebebeb;
+    }
+    a {
+        color: #000;
+        padding-left: 5px;
+    }
+}
+.popular__insta {
+    max-width: 370px;
+    width: 100%;
+}
+.popular__insta-subtitle {
+    margin-bottom: 30px;
+}
+.popular__insta-box {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    img {
+        width: 170px;
+        height: 170px;
+        margin-bottom: 30px;
+    }
+}
+
+// end popular
+// start app
+
+
+.app {
+    margin-bottom: 100px;
+}
+.app__inner {
+    height: 355px;
+    text-align: center;
+    color: #fff;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.app__title {
+    padding-top: 100px;
+    font-size: 32px;
+    line-height: 48px;
+}
+.app__subtitle {
+    font-size: 22px;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.app__box {
+    a {
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+}
+
+// end app
+// start footer
+
+.footer {
+    text-align: center;
+    font-size: 13px;
+}
+.footer__menu {
+    border-top: 2px solid #ededed;
+    padding-top: 20px;
+    margin-bottom: 10px;
+    li + li {
+        margin-left: 25px;
+    }
+    a {
+        color: #000;
+    }
+}
+.footer__copy {
+    span {
+        font-size: 28px;
+        color: $red;
+        font-family: 'Marck Script', cursive;
+
+    }
+}
+
+// end footer
+
+
+@import 'media';
